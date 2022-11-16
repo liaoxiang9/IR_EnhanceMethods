@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/IR_denoise.h
+opencv4/opencv2/opencv.hpp
+-
+opencv4/opencv2/core.hpp
+-
+opencv4/opencv2/imgproc.hpp
+-
+opencv4/opencv2/highgui.hpp
+-
+string
+-
+vector
+-
+iostream
+-
+
+../include/nlm.h
+IR_denoise.h
+../include/IR_denoise.h
+
+/home/lx/IR_Enhance_Methods/IR_denoise/src/main.cpp
+nlm.h
+/home/lx/IR_Enhance_Methods/IR_denoise/src/nlm.h
+
+/home/lx/IR_Enhance_Methods/IR_denoise/src/nlm.cpp
+nlm.h
+/home/lx/IR_Enhance_Methods/IR_denoise/src/nlm.h
+cmath
+-
+
