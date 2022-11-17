@@ -5,7 +5,7 @@ using namespace cv;
 
 int main(){
     NLM n1(11, 21, 10);
-    cv::Mat img_noise = cv::imread("/home/lx/IR_EnhanceMethods/src_images/1.jpg", cv::IMREAD_GRAYSCALE);
+    cv::Mat img_noise = cv::imread("/home/lx/IR_EnhanceMethods/src_images/noise_gaussian.jpg", cv::IMREAD_GRAYSCALE);
     // 检测图像是否读取成功
     if(img_noise.empty()){
         std::cout << "Error: Image not found!" << std::endl;
@@ -24,5 +24,10 @@ int main(){
     cv::Mat dst;
     n1.denoise(dst);
     cv::imwrite("../result/dst.jpg", dst);
+
+    // using opencv nonlocalmeans
+    cv::Mat dst_opencv;
+    cv::fastNlMeansDenoising(img_noise, dst_opencv, 10, 21, 11);
+    cv::imwrite("../result/dst_opencv.jpg", dst_opencv);
     return 0;
 }

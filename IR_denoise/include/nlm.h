@@ -24,6 +24,9 @@ class NLM : public IR_denoise
         };
         void denoise (cv::Mat& dst) const;
         void set_parametres(int t, int s, float h);
+
+        // void fastNonLocalMeans(cv::Mat& src, cv::Mat& dst) const;
+
     private:
         int template_size;
         int search_size;
