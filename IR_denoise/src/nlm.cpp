@@ -1,19 +1,47 @@
 #include "nlm.h"
 #include <cmath>
 
+
+std::string type2str(int type) {
+    std::string r;
+
+    uchar depth = type & CV_MAT_DEPTH_MASK;
+    uchar chans = 1 + (type >> CV_CN_SHIFT);
+
+    switch ( depth ) {
+        case CV_8U:  r = "8U"; break;
+        case CV_8S:  r = "8S"; break;
+        case CV_16U: r = "16U"; break;
+        case CV_16S: r = "16S"; break;
+        case CV_32S: r = "32S"; break;
+        case CV_32F: r = "32F"; break;
+        case CV_64F: r = "64F"; break;
+        default:     r = "User"; break;
+    }
+
+    r += "C";
+    r += (chans+'0');
+
+    return r;
+    }
+
+
+
+
+
 void NLM::denoise(cv::Mat &dst) const
 {
-    dst = cv::Mat::zeros(src.size(), CV_16FC1);
+    dst = cv::Mat::zeros(src.size(), CV_32FC1);
     int half_template_size = template_size / 2;
     int half_search_size = search_size / 2;
     int pad_size = half_template_size + half_search_size;
     // pad for the src
     cv::Mat src_pad;
     cv::copyMakeBorder(src, src_pad, pad_size, pad_size, pad_size, pad_size, cv::BORDER_CONSTANT, 0);
-    src_pad.convertTo(src_pad, CV_16FC1);
+    src_pad.convertTo(src_pad, CV_32FC1);
     cv::Mat patch;
     // initialize the weight
-    cv::Mat weight = cv::Mat::zeros(cv::Size(search_size, search_size), CV_16FC1);
+    cv::Mat weight = cv::Mat::zeros(cv::Size(search_size, search_size), CV_32FC1);
     // initialize the weight_sum
     float weight_sum = 0.0;
     float sum = 0.0;
@@ -26,6 +54,14 @@ void NLM::denoise(cv::Mat &dst) const
             sum = 0.0;
             // get the template
             cv::Mat template_img = src_pad(cv::Rect(j - half_template_size, i - half_template_size, template_size, template_size));
+            // cv::imwrite("template.jpg", template_img);
+            // template_img.convertTo(template_img, CV_16F);
+            // cout the type of template_img
+            // std::cout << template_img.rows << std::endl;
+            // float test1 = template_img.at<float>(9, 9);
+            // std::cout << test1 << std::endl;
+            // std::cout << template_img.type() << std::endl;
+            // std::cout << type2str(template_img.type()) << std::endl;
             // get the search area
             cv::Mat search_area = src_pad(cv::Rect(j - half_search_size, i - half_search_size, search_size, search_size));
             // floop for the search_area
