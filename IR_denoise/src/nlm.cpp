@@ -43,9 +43,10 @@ void NLM::denoise(cv::Mat &dst) const
     // initialize the weight
     cv::Mat weight = cv::Mat::zeros(cv::Size(search_size, search_size), CV_32FC1);
     // initialize the weight_sum
-    float weight_sum = 0.0;
+    // float weight_sum = 0.0;
     float sum = 0.0;
-
+    cv::Mat template_img;
+    cv::Mat search_area;
     // floop for the src_pad
     for (int i = pad_size; i < src_pad.rows - pad_size; i++)
     {
@@ -53,17 +54,9 @@ void NLM::denoise(cv::Mat &dst) const
         {
             sum = 0.0;
             // get the template
-            cv::Mat template_img = src_pad(cv::Rect(j - half_template_size, i - half_template_size, template_size, template_size));
-            // cv::imwrite("template.jpg", template_img);
-            // template_img.convertTo(template_img, CV_16F);
-            // cout the type of template_img
-            // std::cout << template_img.rows << std::endl;
-            // float test1 = template_img.at<float>(9, 9);
-            // std::cout << test1 << std::endl;
-            // std::cout << template_img.type() << std::endl;
-            // std::cout << type2str(template_img.type()) << std::endl;
+            template_img = src_pad(cv::Rect(j - half_template_size, i - half_template_size, template_size, template_size));
             // get the search area
-            cv::Mat search_area = src_pad(cv::Rect(j - half_search_size, i - half_search_size, search_size, search_size));
+            search_area = src_pad(cv::Rect(j - half_search_size, i - half_search_size, search_size, search_size));
             // floop for the search_area
             for (int m = 0; m < search_size; m++)
             {
@@ -75,8 +68,9 @@ void NLM::denoise(cv::Mat &dst) const
                         i - half_search_size + m - half_template_size,
                         template_size, template_size));
                     // calculate the distance between template and patch
-                    weight.at<float>(m, n) = exp(-1 * distance(template_img, patch) / (h*h)); 
-                    sum += weight.at<float>(m, n);
+                    float tmp = exp(-1 * distance(template_img, patch) / (h*h));
+                    weight.at<float>(m, n) =  tmp;
+                    sum += tmp;
                 }
             }
             // weight_sum = cv::sum(weight)[0];
