@@ -5,7 +5,13 @@ using namespace cv;
 
 int main(){
     NLM n1(11, 21, 10);
-    cv::Mat img_noise = cv::imread("/home/lx/IR_Enhance_Methods/src_images/hc.jpg", cv::IMREAD_GRAYSCALE);
+    cv::Mat img_noise = cv::imread("/home/lx/IR_Enhance_Methods/src_images/1.jpg", cv::IMREAD_GRAYSCALE);
+    // 检测图像是否读取成功
+    if(img_noise.empty()){
+        std::cout << "Error: Image not found!" << std::endl;
+        exit(1);
+    }
+
     // 加高斯噪声
     cv::Mat img_noise_gaussian;
     cv::Mat noise = cv::Mat::zeros(img_noise.size(), CV_8UC1);
