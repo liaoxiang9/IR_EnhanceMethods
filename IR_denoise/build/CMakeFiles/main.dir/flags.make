@@ -6,5 +6,5 @@ CXX_FLAGS = -g -O0 -Wall -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /usr/local/include/opencv4 -I/home/lx/IR_Enhance_Methods/IR_denoise/include 
+CXX_INCLUDES = -isystem /usr/local/include/opencv4 -I/home/lx/IR_EnhanceMethods/IR_denoise/include 
 

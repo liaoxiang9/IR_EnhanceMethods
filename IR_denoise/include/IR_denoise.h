@@ -30,9 +30,7 @@ class IR_denoise
 
     protected:
         cv::Mat src;
+        cv::Mat dst;
 };
-
-
-
 #endif
 

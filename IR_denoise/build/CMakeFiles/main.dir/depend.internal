@@ -4,8 +4,8 @@
 CMakeFiles/main.dir/src/main.cpp.o
  ../include/IR_denoise.h
  ../include/nlm.h
- /home/lx/IR_Enhance_Methods/IR_denoise/src/main.cpp
+ /home/lx/IR_EnhanceMethods/IR_denoise/src/main.cpp
 CMakeFiles/main.dir/src/nlm.cpp.o
  ../include/IR_denoise.h
  ../include/nlm.h
- /home/lx/IR_Enhance_Methods/IR_denoise/src/nlm.cpp
+ /home/lx/IR_EnhanceMethods/IR_denoise/src/nlm.cpp

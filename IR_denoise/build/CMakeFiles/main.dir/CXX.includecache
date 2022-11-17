@@ -26,13 +26,13 @@ iostream
 IR_denoise.h
 ../include/IR_denoise.h
 
-/home/lx/IR_Enhance_Methods/IR_denoise/src/main.cpp
+/home/lx/IR_EnhanceMethods/IR_denoise/src/main.cpp
 nlm.h
-/home/lx/IR_Enhance_Methods/IR_denoise/src/nlm.h
+/home/lx/IR_EnhanceMethods/IR_denoise/src/nlm.h
 
-/home/lx/IR_Enhance_Methods/IR_denoise/src/nlm.cpp
+/home/lx/IR_EnhanceMethods/IR_denoise/src/nlm.cpp
 nlm.h
-/home/lx/IR_Enhance_Methods/IR_denoise/src/nlm.h
+/home/lx/IR_EnhanceMethods/IR_denoise/src/nlm.h
 cmath
 -
 

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lx/IR_Enhance_Methods/IR_denoise/src/main.cpp" "/home/lx/IR_Enhance_Methods/IR_denoise/build/CMakeFiles/main.dir/src/main.cpp.o"
-  "/home/lx/IR_Enhance_Methods/IR_denoise/src/nlm.cpp" "/home/lx/IR_Enhance_Methods/IR_denoise/build/CMakeFiles/main.dir/src/nlm.cpp.o"
+  "/home/lx/IR_EnhanceMethods/IR_denoise/src/main.cpp" "/home/lx/IR_EnhanceMethods/IR_denoise/build/CMakeFiles/main.dir/src/main.cpp.o"
+  "/home/lx/IR_EnhanceMethods/IR_denoise/src/nlm.cpp" "/home/lx/IR_EnhanceMethods/IR_denoise/build/CMakeFiles/main.dir/src/nlm.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
