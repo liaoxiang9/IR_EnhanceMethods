@@ -52,3 +52,4 @@ inline void NLM::set_parametres(int t, int s, float h)
     this->h = h;
 }
 #endif
+

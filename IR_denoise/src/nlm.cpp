@@ -23,12 +23,12 @@ std::string type2str(int type) {
     r += (chans+'0');
 
     return r;
-    }
+}
 
 
 
 
-
+inline
 void NLM::denoise(cv::Mat &dst) const
 {
     dst = cv::Mat::zeros(src.size(), CV_32FC1);
