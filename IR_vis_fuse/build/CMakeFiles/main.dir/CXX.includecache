@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/ir_vis_fush.h
+opencv4/opencv2/opencv.hpp
+-
+opencv4/opencv2/core.hpp
+-
+opencv4/opencv2/imgproc.hpp
+-
+opencv4/opencv2/highgui.hpp
+-
+string
+-
+
+/home/lx/IR_EnhanceMethods/IR_vis_fuse/src/ir_vis_fuse.cpp
+ir_vis_fush.h
+/home/lx/IR_EnhanceMethods/IR_vis_fuse/src/ir_vis_fush.h
+iostream
+-
+
+/home/lx/IR_EnhanceMethods/IR_vis_fuse/src/main.cpp
+ir_vis_fush.h
+/home/lx/IR_EnhanceMethods/IR_vis_fuse/src/ir_vis_fush.h
+iostream
+-
+chrono
+-
+
