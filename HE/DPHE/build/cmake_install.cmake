@@ -1,4 +1,4 @@
-# Install script for directory: /home/lx/IR_Enhance_Methods/HE/DPHE
+# Install script for directory: /home/lx/IR_EnhanceMethods/HE/DPHE
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lx/IR_Enhance_Methods/HE/DPHE/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lx/IR_EnhanceMethods/HE/DPHE/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

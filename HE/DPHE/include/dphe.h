@@ -5,7 +5,7 @@
 #include <opencv2/core/types.hpp>
 #include <iostream>
 #include <string>
-#include "/home/lx/IR_Enhance_Methods/HE/APHE/include/aphe.h"
+#include "/home/lx/IR_EnhanceMethods/HE/APHE/include/aphe.h"
 
 
 class dphe: public aphe

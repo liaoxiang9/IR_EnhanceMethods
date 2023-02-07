@@ -3,8 +3,8 @@
 
 CMakeFiles/main.dir/src/dphe.cpp.o
  .././include/dphe.h
- /home/lx/IR_Enhance_Methods/HE/APHE/include/aphe.h
- /home/lx/IR_Enhance_Methods/HE/DPHE/src/dphe.cpp
+ /home/lx/IR_EnhanceMethods/HE/APHE/include/aphe.h
+ /home/lx/IR_EnhanceMethods/HE/DPHE/src/dphe.cpp
  /usr/local/include/opencv4/opencv2/./imgproc/segmentation.hpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp
@@ -113,8 +113,8 @@ CMakeFiles/main.dir/src/dphe.cpp.o
  /usr/local/include/opencv4/opencv2/videoio.hpp
 CMakeFiles/main.dir/src/main.cpp.o
  .././include/dphe.h
- /home/lx/IR_Enhance_Methods/HE/APHE/include/aphe.h
- /home/lx/IR_Enhance_Methods/HE/DPHE/src/main.cpp
+ /home/lx/IR_EnhanceMethods/HE/APHE/include/aphe.h
+ /home/lx/IR_EnhanceMethods/HE/DPHE/src/main.cpp
  /usr/local/include/opencv4/opencv2/./imgproc/segmentation.hpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp

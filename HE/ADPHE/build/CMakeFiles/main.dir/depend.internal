@@ -3,7 +3,7 @@
 
 CMakeFiles/main.dir/src/adphe.cpp.o
  .././include/adphe.h
- /home/lx/IR_Enhance_Methods/HE/ADPHE/src/adphe.cpp
+ /home/lx/IR_EnhanceMethods/HE/ADPHE/src/adphe.cpp
  /usr/local/include/opencv4/opencv2/./imgproc/segmentation.hpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp
@@ -112,7 +112,7 @@ CMakeFiles/main.dir/src/adphe.cpp.o
  /usr/local/include/opencv4/opencv2/videoio.hpp
 CMakeFiles/main.dir/src/main.cpp.o
  .././include/adphe.h
- /home/lx/IR_Enhance_Methods/HE/ADPHE/src/main.cpp
+ /home/lx/IR_EnhanceMethods/HE/ADPHE/src/main.cpp
  /usr/local/include/opencv4/opencv2/./imgproc/segmentation.hpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp

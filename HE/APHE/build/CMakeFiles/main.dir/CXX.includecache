@@ -28,11 +28,11 @@ algorithm
 cstdio
 -
 
-/home/lx/IR_Enhance_Methods/HE/APHE/src/aphe.cpp
+/home/lx/IR_EnhanceMethods/HE/APHE/src/aphe.cpp
 
-/home/lx/IR_Enhance_Methods/HE/APHE/src/main.cpp
+/home/lx/IR_EnhanceMethods/HE/APHE/src/main.cpp
 aphe.h
-/home/lx/IR_Enhance_Methods/HE/APHE/src/aphe.h
+/home/lx/IR_EnhanceMethods/HE/APHE/src/aphe.h
 
 /usr/local/include/opencv4/opencv2/./imgproc/segmentation.hpp
 opencv2/imgproc.hpp
@@ -155,8 +155,6 @@ arm_neon.h
 -
 immintrin.h
 -
-arm_neon.h
--
 immintrin.h
 -
 immintrin.h
@@ -175,8 +173,6 @@ altivec.h
 -
 hal/msa_macros.h
 /usr/local/include/opencv4/opencv2/core/hal/msa_macros.h
-lasxintrin.h
--
 wasm_simd128.h
 -
 riscv_vector.h
@@ -349,8 +345,6 @@ time.h
 /usr/local/include/opencv4/opencv2/core/saturate.hpp
 opencv2/core/cvdef.h
 /usr/local/include/opencv4/opencv2/core/opencv2/core/cvdef.h
-climits
--
 opencv2/core/fast_math.hpp
 /usr/local/include/opencv4/opencv2/core/opencv2/core/fast_math.hpp
 

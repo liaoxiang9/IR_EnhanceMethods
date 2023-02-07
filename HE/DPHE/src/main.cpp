@@ -2,9 +2,11 @@
 
 int main()
 {
-    dphe dphe("/home/lx/IR_Enhance_Methods/src_images/1.jpg");
+    dphe dphe("/home/lx/IR_EnhanceMethods/src_images/1.jpg");
     cv::Mat result = dphe.get_result();
-    cv::imshow("result", result);
-    cv::waitKey(0);
+    // write the result
+    cv::imwrite("/home/lx/IR_EnhanceMethods/src_images/1_dphe_result.jpg", result);
+    // cv::imshow("result", result);
+    // cv::waitKey(0);
     return 0;
 }

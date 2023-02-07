@@ -21,10 +21,10 @@ iostream
 -
 string
 -
-/home/lx/IR_Enhance_Methods/HE/APHE/include/aphe.h
+/home/lx/IR_EnhanceMethods/HE/APHE/include/aphe.h
 -
 
-/home/lx/IR_Enhance_Methods/HE/APHE/include/aphe.h
+/home/lx/IR_EnhanceMethods/HE/APHE/include/aphe.h
 opencv2/opencv.hpp
 -
 opencv2/highgui/highgui.hpp
@@ -46,13 +46,13 @@ algorithm
 cstdio
 -
 
-/home/lx/IR_Enhance_Methods/HE/DPHE/src/dphe.cpp
+/home/lx/IR_EnhanceMethods/HE/DPHE/src/dphe.cpp
 dphe.h
-/home/lx/IR_Enhance_Methods/HE/DPHE/src/dphe.h
+/home/lx/IR_EnhanceMethods/HE/DPHE/src/dphe.h
 
-/home/lx/IR_Enhance_Methods/HE/DPHE/src/main.cpp
+/home/lx/IR_EnhanceMethods/HE/DPHE/src/main.cpp
 dphe.h
-/home/lx/IR_Enhance_Methods/HE/DPHE/src/dphe.h
+/home/lx/IR_EnhanceMethods/HE/DPHE/src/dphe.h
 
 /usr/local/include/opencv4/opencv2/./imgproc/segmentation.hpp
 opencv2/imgproc.hpp
@@ -175,8 +175,6 @@ arm_neon.h
 -
 immintrin.h
 -
-arm_neon.h
--
 immintrin.h
 -
 immintrin.h
@@ -195,8 +193,6 @@ altivec.h
 -
 hal/msa_macros.h
 /usr/local/include/opencv4/opencv2/core/hal/msa_macros.h
-lasxintrin.h
--
 wasm_simd128.h
 -
 riscv_vector.h
@@ -369,8 +365,6 @@ time.h
 /usr/local/include/opencv4/opencv2/core/saturate.hpp
 opencv2/core/cvdef.h
 /usr/local/include/opencv4/opencv2/core/opencv2/core/cvdef.h
-climits
--
 opencv2/core/fast_math.hpp
 /usr/local/include/opencv4/opencv2/core/opencv2/core/fast_math.hpp
 

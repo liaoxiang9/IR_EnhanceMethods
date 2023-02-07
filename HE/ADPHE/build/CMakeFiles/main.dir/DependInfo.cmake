@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lx/IR_Enhance_Methods/HE/ADPHE/src/adphe.cpp" "/home/lx/IR_Enhance_Methods/HE/ADPHE/build/CMakeFiles/main.dir/src/adphe.cpp.o"
-  "/home/lx/IR_Enhance_Methods/HE/ADPHE/src/main.cpp" "/home/lx/IR_Enhance_Methods/HE/ADPHE/build/CMakeFiles/main.dir/src/main.cpp.o"
+  "/home/lx/IR_EnhanceMethods/HE/ADPHE/src/adphe.cpp" "/home/lx/IR_EnhanceMethods/HE/ADPHE/build/CMakeFiles/main.dir/src/adphe.cpp.o"
+  "/home/lx/IR_EnhanceMethods/HE/ADPHE/src/main.cpp" "/home/lx/IR_EnhanceMethods/HE/ADPHE/build/CMakeFiles/main.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
